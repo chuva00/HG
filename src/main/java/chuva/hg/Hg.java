@@ -1,5 +1,6 @@
 package chuva.hg;
 
+import chuva.hg.state.StateManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Hg extends JavaPlugin {
@@ -9,6 +10,8 @@ public final class Hg extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
+
+        StateManager.start();
     }
 
     @Override
