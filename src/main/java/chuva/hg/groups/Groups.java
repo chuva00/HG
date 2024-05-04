@@ -4,7 +4,11 @@ import org.bukkit.ChatColor;
 
 public enum Groups {
 
-    ;
+    DEFAULT("Membro", "", 0, 0, ChatColor.GRAY),
+    VIP("Vip", "VIP", 1, 0, ChatColor.GREEN),
+    MVP("Mvp", "MVP", 2, 0, ChatColor.AQUA),
+    STAFF("Staff", "Staff", 3, 5, ChatColor.YELLOW),
+    MANAGER("Manager", "Manager", 10, 1, ChatColor.GOLD);
 
     private final String name, displayName;
     private final int weight, slots;
